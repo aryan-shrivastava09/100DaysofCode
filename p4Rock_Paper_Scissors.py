@@ -26,43 +26,48 @@ scissors = '''
 ---.__(___)
 '''
 
+#Instead of nesting if else i could have used logical operators in some places
+
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-if choice == 0:
-  print(rock)
-elif choice == 1:
-  print(paper)
-elif choice == 2:
-  print(scissors)
-rand = random.randint(0,2)
-print("Computer chose:")
-if rand == 0:
-  print(rock)
-elif rand == 1:
-  print(paper)
-elif rand == 2:
-  print(scissors)
+if choice >=3 or choice <0 :
+    print("Invalid number, you lose")
+else:
+    if choice == 0:
+        print(rock)
+    elif choice == 1:
+        print(paper)
+    elif choice == 2:
+        print(scissors)
+    rand = random.randint(0,2)
+    print("Computer chose:")
+    if rand == 0:
+        print(rock)
+    elif rand == 1:
+        print(paper)
+    elif rand == 2:
+        print(scissors)
 
-#Result
-if (choice==0):
-  if (rand==0):
-    print("It's a draw")
-  elif (rand == 1):
-    print("You lose")
-  else:
-    print("You win")
+    #Result
+    if (choice==0):
+        if (rand==0):
+            print("It's a draw")
+        elif (rand == 1):
+            print("You lose")
+        else:
+            print("You win")
 
-if (choice==1):
-  if (rand==1):
-    print("It's a draw")
-  elif (rand == 2):
-    print("You lose")
-  else:
-    print("You win")
+    if (choice==1):
+        if (rand==1):
+            print("It's a draw")
+        elif (rand == 2):
+            print("You lose")
+        else:
+            print("You win")
 
-if (choice==2):
-  if (rand==2):
-    print("It's a draw")
-  elif (rand == 0):
-    print("You lose")
-  else:
-    print("You win")
+    if (choice==2):
+        if (rand==2):
+            print("It's a draw")
+        elif (rand == 0):
+            print("You lose")
+        else:
+            print("You win")
