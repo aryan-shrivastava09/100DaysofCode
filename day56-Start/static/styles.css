@@ -1,0 +1,47 @@
+body {
+    background-color: #28527a;
+}
+
+hr {
+    border-style: dotted none none none;
+    border-width: 5px;
+    width: 5%;
+    align-items: center;
+    color: white;
+}
+
+img {
+    height: 100px;
+}
+
+img:hover {
+    background-color: goldenrod;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: #8Ac4d0;
+}
+
+h3 {
+    color: #8ac4d0;
+}
+
+a {
+    color: #fdd160;
+}
+
+table {
+    color: #fbeeac;
+}
+
+ul {
+    color: #FBEEAC;
+}
+
+ol {
+    color: #FBEEAC;
+}
